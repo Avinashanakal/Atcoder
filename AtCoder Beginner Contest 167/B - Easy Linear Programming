@@ -1,0 +1,17 @@
+#include <bits/stdc++.h>
+#define lli long long int
+using namespace std;
+
+int main() {
+    lli a,b,c,k;
+    cin>>a>>b>>c>>k;
+    
+    int ans=0;
+    ans+=min(k,a);
+    k-=min(k,a);
+    k-=min(k,b);
+    ans-=min(k,c);
+    cout<<ans<<endl;
+    
+	return 0;
+}
